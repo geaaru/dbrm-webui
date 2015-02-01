@@ -1,0 +1,41 @@
+extends layout
+
+block content
+
+  script(src='/javascripts/login.js')
+  #headpage.index
+
+    .pusher
+      .full.height
+        .masthead.segment
+
+          .ui.page.grid
+            .column
+              .main_title
+                h1.ui.inverted.header
+                  span.library.transition.visible Sign In
+
+
+              .ui.centered.banner.ad.login.header
+                .ui.inverted.link.list
+                  .item
+                    .ui.left.icon.input
+                      input(type='text',id='iuser',name='username',placeholder="Username...")
+                      i.user.icon.inline
+
+                  .item
+                    .ui.left.icon.input
+                      input(type='password',id='ipwd',name='password',placeholder='Password...')
+                      i.lock.icon.inline
+
+                  .item
+                    a(class='ui inverted blue basic button',href="/",style='margin-right: 19px;') Back
+                    #login.ui.submit.inverted.red.button Submit
+
+              #message
+
+    #success_login
+
+
+
+

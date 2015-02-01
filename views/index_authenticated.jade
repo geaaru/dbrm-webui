@@ -1,0 +1,60 @@
+extends layout
+
+block content
+
+  script(src='/javascripts/menu.js')
+
+  #menu_dbrm.menu.pushable
+
+    // Menu
+    #menu_bar.ui.sidebar.left.vertical.inverted.labeled.icon.menu
+      .item
+        a.ui.logo.icon.image
+          b DBRM UI
+      a.item
+        i.home.icon Home
+      a.item
+        i.calendar.icon History
+
+    // Menu Icon
+    .ui.button.black.big.launch.right.attached.fixed
+      i.content.icon
+      span.text Menu
+
+  #headpage.index
+
+
+    .ui.page.grid.centered
+
+      .column
+
+    // Pusher Section
+    .pusher
+      .full.height
+        .masthead.segment
+
+          .ui.page.grid
+            .column
+              .main_title
+                .ui.black.version.label.transition.visible #{version}
+
+                h1(class='ui inverted header')
+                  span(class='library transition visible') #{title}
+
+                  b D
+                  span.text ata
+                  b B
+                  span.text ase
+                  b.word R
+                  span.text elease
+                  b.word M
+                  span.text anager Web
+                  b.word UI
+
+                .ui.hidden.divider
+
+                p Welcome back #{user.username}
+                a(href='/logout',class='ui huge basic inverted red button') Logout
+                  i(class='right chevron icon')
+
+

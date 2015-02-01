@@ -1,0 +1,42 @@
+doctype html
+html
+
+  head
+
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/semantic-ui/semantic.css')
+    script(src='/javascripts/dist/jquery.js')
+    script(src='/semantic-ui/semantic.min.js')
+
+  body#layout.pushable
+
+        block content
+
+        // Footer
+
+        .ui.inverted.black.footer.vertical.segment
+          .container
+            .ui.stackable.inverted.divided.relaxed.grid
+
+              .five.wide.column
+                h4.ui.inverted.header DBRM UI v. #{version}
+                p.note License #{global.license}
+
+
+              .five.wide.column
+
+                h5.ui.teal.inverted.header Contribute
+                  .ui.inverted.link.list
+                    a(class="item " href="https://github.com/geaaru/database-release-manager/issues") Issue Tracker
+                    a(class="item disabled" href="#") Contributors
+
+              .five.wide.column
+
+                h5.ui.teal.inverted.header Database Release Manager
+                  .ui.inverted.link.list
+                    a(class="item disabled" href="#") Project
+                    a(class="item disabled" href="#") Issue Tracker
+
+
+

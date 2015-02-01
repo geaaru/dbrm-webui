@@ -1,0 +1,40 @@
+extends layout
+
+block content
+
+  #headpage.index
+
+    .ui.page.grid.centered
+
+      .column
+
+      // Menu
+
+    // Pusher Section
+    .pusher
+      .full.height
+        .masthead.segment
+
+          .ui.page.grid
+            .column
+              .main_title
+                .ui.black.version.label.transition.visible #{version}
+
+                h1(class='ui inverted header')
+                  span(class='library transition visible') #{title}
+
+                  b D
+                  span.text ata
+                  b B
+                  span.text ase
+                  b.word R
+                  span.text elease
+                  b.word M
+                  span.text anager Web
+                  b.word UI
+
+                .ui.hidden.divider
+
+                  a(href='/login',class='ui huge basic inverted red button') Login
+                    i(class='right chevron icon')
+
